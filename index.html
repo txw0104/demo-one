@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>蜀九香火锅官网</title>
+		<link rel="icon" href="images/w_z.png">
+		<script src="js/jQuery.js"></script>
+		<script src="js/index.js"></script>
+		<script src="js/scorllReveal.js"></script>
+		<link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" href="css/swiper_1.css">
+		<link rel="stylesheet" href="css/swiper_2.css">
+		<!-- <link rel="stylesheet" href="css/swiper_3.css"> -->
+		<link rel="stylesheet" href="css/swiper4.css">
+		<script src="public/public.js"></script>
+		<style>
+			.a_1{
+				display: none;
+			}
+			.a_2{
+				display: none;
+			}
+		</style>
+		
+	</head>
+	<body>
+		<!-- 头部及导航 -->
+		<div class="box clearfix">
+			<div class="header">
+				<a href="index.html">
+					<img src="images/sjx_b.png" alt="" class="ig_b block">
+					<img src="images/sjx_h.png" alt="" class="ig_h none">
+				</a>
+				<div class="MenuBtn">
+					<span class="line1"></span>
+					<span class="line2"></span>
+					<span class="line3"></span>
+				</div>
+				<div class="border">
+					<ul class="navigation">
+						<li><a href="#" class="navigation_1">首页</a></li>
+						<li><a href="#" class="linn">品牌中心</a>
+							<div class="aaa a_1">
+								<p><a href="BrandCenter/BrandCenter.html" style="font-size: 14px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;加盟优势</a></p>
+								<p><a href="BrandCenter/StoreEnvironment.html" style="font-size: 14px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;加盟支持</a></p>
+								<p><a href="BrandCenter/BrandStory.html" style="font-size: 14px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;联系方式</a></p>
+								<p><a href="BrandCenter/TheStores.html" style="font-size: 14px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;留言表单</a></p>
+							</div>
+						</li>
+						<li><a href="#" class="linm">新闻质询</a>
+							<div class="aaa a_2">
+								<p><a href="NewsInquiry/new.html" style="font-size: 14px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;近期活动</a></p>
+								<p><a href="NewsInquiry/NewsCenter.html" style="font-size: 14px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;近期公告</a></p>
+								<p><a href="NewsInquiry/VideoCenter.html" style="font-size: 14px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;视频中心</a></p>
+							</div>
+						</li>
+						<li><a href="AboutUs/index.html">关于我们</a></li>
+						<li><a href="Join in cooperation/index.html">加盟合作</a></li>
+					</ul>
+					<div class="contact">
+						<div class="wx">
+							<img src="images/wx.gif" alt="" id="btn">
+						</div>
+						<div class="dh">
+							<img src="images/dh.gif" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+			<!-- 轮播 -->
+			<!-- <div class="txts">
+				<div class="demo"></div>
+			</div>
+			<script>
+				$('.demo').slider({
+					imgList: [{
+							img: "images/f1.jpg",
+							a: '#',
+						},
+						{
+							img: "images/f2.jpg",
+							a: '#',
+						},
+						{
+							img: "images/f3.jpg",
+							a: '#',
+						},
+						{
+							img: "images/f4.jpg",
+							a: '#',
+						}
+					], //图片的列表
+					width: "100%", //图片的宽
+					height: "985px", //图片的高
+					isAuto: true, //是否自动轮播
+					moveTime: 3000, //运动时间
+					direction: 'right', //轮播的方向
+					btnWidth: 30, //按钮的宽
+					btnHeight: 30, //按钮的高
+					spanWidth: 10, //span按钮的宽
+					spanHeight: 10, //span按钮的高
+					spanColor: '#fff', //span按钮的颜色
+					activeSpanColor: 'red', //选中的span颜色
+					btnBackgroundColor: 'rgba(0, 0, 0, 0.3)', //两侧按钮的颜色
+					spanRadius: '50%', //span按钮的圆角程度
+					spanMargin: 3, //span之间的距离
+				})
+			</script> -->
+			<script>
+				$(function() {
+					// 监听鼠标移动事件
+					$("body").mousemove(function(event) {
+						// 获取坐标
+						var coordinate = "(" + event.pageX + "," + event.pageY + ")";
+						// 将坐标赋值到span标签显示
+						// console.log(coordinate);
+						// console.log(event.pageX)
+						if (event.pageX > 300) {
+							$('.follow_1').css('transform', 'translateX(10px)')
+							$('.follow_2').css('transform', 'translateX(20px)')
+							$('.follow_3').css('transform', 'translateX(170px)')
+							$('.follow_4').css('transform', 'translateX(160px)')
+							$('.follow_5').css('transform', 'translateX(150px)')
+						}
+						if (event.pageX > 600) {
+							$('.follow_1').css('transform', 'translateX(30px)')
+							$('.follow_2').css('transform', 'translateX(40px)')
+							$('.follow_3').css('transform', 'translateX(170px)')
+							$('.follow_4').css('transform', 'translateX(160px)')
+							$('.follow_5').css('transform', 'translateX(150px)')
+						}
+						if (event.pageX > 900) {
+							$('.follow_1').css('transform', 'translateX(60px)')
+							$('.follow_2').css('transform', 'translateX(60px)')
+							$('.follow_3').css('transform', 'translateX(170px)')
+							$('.follow_4').css('transform', 'translateX(160px)')
+							$('.follow_5').css('transform', 'translateX(150px)')
+						}
+						if (event.pageX > 1200) {
+							$('.follow_1').css('transform', 'translateX(90px)')
+							$('.follow_2').css('transform', 'translateX(80px)')
+							$('.follow_3').css('transform', 'translateX(170px)')
+							$('.follow_4').css('transform', 'translateX(160px)')
+							$('.follow_5').css('transform', 'translateX(150px)')
+						}
+						if (event.pageX > 1500) {
+							$('.follow_1').css('transform', 'translateX(130px)')
+							$('.follow_2').css('transform', 'translateX(110px)')
+							$('.follow_3').css('transform', 'translateX(170px)')
+							$('.follow_4').css('transform', 'translateX(160px)')
+							$('.follow_5').css('transform', 'translateX(150px)')
+						}
+						if (event.pageX > 1800) {
+							$('.follow_1').css('transform', 'translateX(200px)')
+							$('.follow_2').css('transform', 'translateX(170px)')
+							$('.follow_3').css('transform', 'translateX(170px)')
+							$('.follow_4').css('transform', 'translateX(160px)')
+							$('.follow_5').css('transform', 'translateX(150px)')
+						}
+
+					});
+				})
+			</script>
+
+			<div id="mtk" class="mt" style="z-index: 9999999;">
+				<div class="mt-content">
+					<h2>微信</h2>
+					<span id="closeBtn" class="close">关闭</span>
+				</div>
+			</div>
+			<script>
+				(function() {
+					var zbox = {};
+					zbox.mt = document.getElementById("mtk");
+					zbox.btn = document.getElementById("btn");
+					zbox.closeBtn = document.getElementById("closeBtn");
+					zbox.show = function() {
+						console.log(this.mt);
+						this.mt.style.display = "block";
+					}
+					zbox.close = function() {
+						this.mt.style.display = "none";
+					}
+					zbox.outsideClick = function() {
+						var mt = this.mt;
+						window.onclick = function(event) {
+							if (event.target == mt) {
+								mt.style.display = "none";
+							}
+						}
+					}
+					zbox.init = function() {
+						var that = this;
+						this.btn.onclick = function() {
+							that.show();
+						}
+						this.closeBtn.onclick = function() {
+							that.close();
+						}
+						this.outsideClick();
+					}
+					zbox.init();
+
+				})();
+			</script>
+			<!-- Swiper -->
+			<div class="swiper mySwiper swiper3" id="swiper_3">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="images/f1.jpg" alt="">
+						<div class="swiper_cont swiper_cont1" style="transition: all .6s;">
+							<p data-scroll-reveal="enter right and move 100px over .8s">跨过山和大海</p>
+							<p data-scroll-reveal="enter right and move 100px over .8s">
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;只做品质火锅</p>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<img src="images/f2.jpg" alt="">
+						<div class="swiper_cont swiper_cont2" style="transition: all .6s;">
+							<p data-scroll-reveal="enter right and move 100px over .8s">跨过山和大海</p>
+							<p data-scroll-reveal="enter right and move 100px over .8s">
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;只做品质火锅</p>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<img src="images/f3.jpg" alt="">
+						<div class="swiper_cont swiper_cont3" style="transition: all .6s;">
+							<p data-scroll-reveal="enter right and move 100px over .8s">跨过山和大海</p>
+							<p data-scroll-reveal="enter right and move 100px over .8s">
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;只做品质火锅</p>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<img src="images/f4.jpg" alt="">
+						<div class="swiper_cont swiper_cont4" style="transition: all .6s;">
+							<p data-scroll-reveal="enter right and move 100px over .8s">跨过山和大海</p>
+							<p data-scroll-reveal="enter right and move 100px over .8s">
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;只做品质火锅</p>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-pagination"></div>
+			</div>
+
+			<!-- Swiper JS -->
+			<!-- <script src="js/swiper_3.js"></script> -->
+			<script src="js/swiper4.js"></script>
+
+			<!-- Initialize Swiper -->
+			<script>
+				// var swiper = new Swiper(".swiper3", {
+				// 	effect: 'fade',
+				// 	autoplay: true,
+				// 	slidesPerView: 1,
+				// 	spaceBetween: 30,
+				// 	loop: true,
+				// 	pagination: {
+				// 		el: ".swiper-pagination",
+				// 		clickable: true,
+				// 	},
+				// 	navigation: {
+				// 		nextEl: ".swiper-button-next",
+				// 		prevEl: ".swiper-button-prev",
+				// 	},
+				// 	onSlideChangeStart:function(){
+				// 	// 获取当前滑动页的下标
+				// 	actIndex = swiper2.activeIndex;
+				// 	console.log(activeIndex)
+				// 	// swiper1.slideTo(actIndex);
+				// 	},
+				// });
+
+				var swiper = new Swiper(".mySwiper", {
+					effect: 'fade',
+					autoplay: true,
+					slidesPerView: 1,
+					spaceBetween: 30,
+					loop: true,
+					pagination: {
+						el: ".swiper-pagination",
+						clickable: true,
+					},
+					navigation: {
+						nextEl: ".swiper-button-next",
+						prevEl: ".swiper-button-prev",
+					},
+					on: {
+						slideChangeTransitionStart: function() {
+							console.log(this.activeIndex);
+							if (this.activeIndex == 2) {
+								$(".swiper_cont1").css("left", "-60px")
+								$(".swiper_cont2").css("left", "20%")
+								$(".swiper_cont3").css("left", "20%")
+								$(".swiper_cont4").css("left", "20%")
+							} else if (this.activeIndex == 3) {
+								$(".swiper_cont2").css("left", "-60px")
+								$(".swiper_cont1").css("left", "20%")
+								$(".swiper_cont3").css("left", "20%")
+								$(".swiper_cont4").css("left", "20%")
+							} else if (this.activeIndex == 4) {
+								$(".swiper_cont3").css("left", "-60px")
+								$(".swiper_cont2").css("left", "20%")
+								$(".swiper_cont1").css("left", "20%")
+								$(".swiper_cont4").css("left", "20%")
+							} else if (this.activeIndex == 5) {
+								$(".swiper_cont4").css("left", "-60px")
+								$(".swiper_cont2").css("left", "20%")
+								$(".swiper_cont3").css("left", "20%")
+								$(".swiper_cont1").css("left", "20%")
+							}
+						},
+					}
+				});
+			</script>
+
+			<div class="content">
+				<!-- 跟谁鼠标滚动 -->
+				<div class="follow">
+					<div class="follow_1">
+						<img src="images/dishes1.png" alt="">
+					</div>
+					<div class="follow_2">
+						<img src="images/dishes2.png" alt="">
+					</div>
+					<div class="follow_3">
+						<img src="images/dishes3.png" alt="">
+					</div>
+					<div class="follow_4">
+						<img src="images/dishes4.png" alt="">
+					</div>
+					<div class="follow_5">
+						<img src="images/dishes5.png" alt="">
+					</div>
+					<div class="follow_6">
+						<span>S H U</span>
+						<span>J I u </span>
+						<span>X I A N G</span>
+					</div>
+					<div class="follow_7">
+						<span>S I N C E</span>
+						<span>2 0 0 0</span>
+					</div>
+				</div>
+				<!-- <div class="cont_ig">
+					<img src="images/blue.png" alt="">
+				</div> -->
+				<!-- 带视频 -->
+				<div class="data_v">
+					<div class="data_v_z">
+						<div class="data_top">
+							<img src="images/download.png" alt="" class="data_top_t">
+						</div>
+						<div class="about_title" data-scroll-reveal="enter bottom and move 100px over .8s">好菜品出自好人品
+						</div>
+						<div class="data_end">
+							<div class="data_end_end" data-scroll-reveal="enter bottom and move 100px over .8s">
+								<p id="desc">
+									蜀九香以“见菜品如见人品”为信念，不断创新，精心打造企业品牌, 先后荣获了“中国特许加盟火锅品牌TOP20”，“中国五星级火锅企业”等多项荣誉称号...
+								</p>
+								<span data-scroll-reveal="enter bottom and move 100px over .8s">了解详情
+									<img src="images/download1.png" alt="" class="er">
+									<img src="images/download2.png" alt="" class="er1">
+								</span>
+								<div class="sp_1">
+									<div class="sp_1_1">
+										<img src="images/sp_1.gif" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- 带进场效果 -->
+				<div class="home_hsnr">
+					<div class="home_hsnr_s">
+						<div class="home_hsnr_z">
+							<div class="home_hsnr_x">
+								<img src="images/hsnr.jpg" alt="" class="HotNot">
+							</div>
+							<div class="shadow"></div>
+							<div class="fadeIne">
+								<div class="fadeIne_s">
+									<div class="fadeIne_z">
+										<div class="fadeIne_d"
+											data-scroll-reveal="enter bottom and move 100px over .8s">浓香型火锅</div>
+										<div class="fadeIne_e"
+											data-scroll-reveal="enter bottom and move 100px over 1.2s">
+											<p>蜀九香只做中国浓香型火锅，用二十余年的摸索与探寻，最终将那令人回味隽永的九香味呈现在食客面前。</p>
+											<span>了解详情
+												<img src="images/download1.png" alt="" class="er">
+												<img src="images/download2.png" alt="" class="er1">
+											</span>
+										</div>
+									</div>
+									<div class="fadeIne_y">
+										<div class="fadeIne_y_s"
+											data-scroll-reveal="enter right and move 100px over .8s">
+											<img src="images/z-z.png" alt="">
+											<!-- <div class="nxhg">
+												<span>1</span>
+												<p>底料20道工艺炒制</p>
+											</div> -->
+											<b>底料20道工艺炒制</b>
+											<img src="images/z-y.png" alt="">
+										</div>
+										<div class="fadeIne_y_s mar_t"
+											data-scroll-reveal="enter right and move 100px over 1s">
+											<img src="images/z-z.png" alt="">
+											<!-- <div class="nxhg">
+												<span>2</span>
+												<p>底料20道工艺炒制</p>
+											</div> -->
+											<b>底汤5小时文火熬制</b>
+											<img src="images/z-y.png" alt="">
+										</div>
+										<div class="fadeIne_y_s mar_t"
+											data-scroll-reveal="enter right and move 100px over 1.2s">
+											<img src="images/z-z.png" alt="">
+											<!-- <div class="nxhg">
+												<span>3</span>
+												<p>底料20道工艺炒制</p>
+											</div> -->
+											<b>专 利无渣牛油锅底 </b>
+											<img src="images/z-y.png" alt="">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div><!-- //结束 -->
+
+				<!-- 轮播 -->
+				<div class="special">
+					<div class="res">
+						<div class="tscp">
+							<div>特</div>
+							<div>色</div>
+							<div>菜</div>
+							<div>品</div>
+						</div>
+						<div class="aos_init">
+							<!-- 插件 -->
+							<div class="swiper_boxx">
+								<div class="swiper mySwiper swiper1">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide swiper_sp According">
+											<a href="#">
+												<img src="images/hyz_1.jpg" alt="" class="swiper_1ig">
+												<div class="zbc zbc_1">
+													<p>大刀毛肚</p>
+													<p>一招"煮遍天下"</p>
+													<p>火锅有着豪放不羁的少年气</p>
+
+													<span>了解详情
+														<img src="images/download1.png" alt="" class="swiper_2ig">
+														<img src="images/download2.png" alt="" class="swiper_2ig">
+													</span>
+												</div>
+											</a>
+
+										</div>
+										<div class="swiper-slide swiper_sp activeto">
+											<a href="#">
+												<img src="images/hyz_2.jpg" alt="" class="swiper_1ig">
+												<div class="zbc">
+													<p>大刀毛肚</p>
+													<p>一招"煮遍天下"</p>
+													<p>火锅有着豪放不羁的少年气</p>
+
+													<span>了解详情
+														<img src="images/download1.png" alt="" class="swiper_2ig">
+														<img src="images/download2.png" alt="" class="swiper_2ig">
+													</span>
+												</div>
+											</a>
+										</div>
+										<div class="swiper-slide swiper_sp According">
+											<a href="#">
+												<img src="images/hyz_3.jpg" alt="" class="swiper_1ig">
+												<div class="zbc zbc_1">
+													<p>大刀毛肚</p>
+													<p>一招"煮遍天下"</p>
+													<p>火锅有着豪放不羁的少年气</p>
+
+													<span>了解详情
+														<img src="images/download1.png" alt="" class="swiper_2ig">
+														<img src="images/download2.png" alt="" class="swiper_2ig">
+													</span>
+												</div>
+											</a>
+
+										</div>
+										<div class="swiper-slide swiper_sp activeto">
+											<a href="#">
+												<img src="images/hyz_4.jpg" alt="" class="swiper_1ig">
+												<div class="zbc">
+													<p>大刀毛肚</p>
+													<p>一招"煮遍天下"</p>
+													<p>火锅有着豪放不羁的少年气</p>
+
+													<span>了解详情
+														<img src="images/download1.png" alt="" class="swiper_2ig">
+														<img src="images/download2.png" alt="" class="swiper_2ig">
+													</span>
+												</div>
+											</a>
+
+										</div>
+										<div class="swiper-slide swiper_sp According">
+											<a href="#">
+												<img src="images/hyz_5.jpg" alt="" class="swiper_1ig">
+												<div class="zbc zbc_1">
+													<p>大刀毛肚</p>
+													<p>一招"煮遍天下"</p>
+													<p>火锅有着豪放不羁的少年气</p>
+
+													<span>了解详情
+														<img src="images/download1.png" alt="" class="swiper_2ig">
+														<img src="images/download2.png" alt="" class="swiper_2ig">
+													</span>
+												</div>
+											</a>
+
+										</div>
+										<div class="swiper-slide swiper_sp activeto">
+											<a href="#">
+												<img src="images/hyz_6.jpg" alt="" class="swiper_1ig">
+												<div class="zbc">
+													<p>大刀毛肚</p>
+													<p>一招"煮遍天下"</p>
+													<p>火锅有着豪放不羁的少年气</p>
+
+													<span>了解详情
+														<img src="images/download1.png" alt="" class="swiper_2ig">
+														<img src="images/download2.png" alt="" class="swiper_2ig">
+													</span>
+												</div>
+											</a>
+
+										</div>
+									</div>
+									<div class="swiper-button-next">
+										<p>换一组</p>
+										<span>
+											<img src="images/th.png" alt="">
+										</span>
+
+									</div>
+								</div>
+							</div>
+
+
+							<!-- Swiper JS -->
+							<script src="new_file.js"></script>
+
+							<!-- Initialize Swiper -->
+							<script>
+								var swiper = new Swiper(".swiper1", {
+									slidesPerView: 2,
+									spaceBetween: 30,
+									slidesPerGroup: 2,
+									loop: true,
+									loopFillGroupWithBlank: true,
+									pagination: {
+										el: ".swiper-pagination",
+										clickable: true,
+									},
+									navigation: {
+										nextEl: ".swiper-button-next",
+										prevEl: ".swiper-button-prev",
+									},
+								});
+								var indexWidth = $(window).width()
+								console.log(indexWidth);
+								if (indexWidth < 480) {
+									var swiper = new Swiper(".swiper1", {
+										slidesPerView: 1,
+										spaceBetween: 30,
+										slidesPerGroup: 1,
+										loop: true,
+										loopFillGroupWithBlank: true,
+										pagination: {
+											el: ".swiper-pagination",
+											clickable: true,
+										},
+										navigation: {
+											nextEl: ".swiper-button-next",
+											prevEl: ".swiper-button-prev",
+										},
+									});
+								} else {
+									var swiper = new Swiper(".swiper1", {
+										slidesPerView: 2,
+										spaceBetween: 30,
+										slidesPerGroup: 2,
+										loop: true,
+										loopFillGroupWithBlank: true,
+										pagination: {
+											el: ".swiper-pagination",
+											clickable: true,
+										},
+										navigation: {
+											nextEl: ".swiper-button-next",
+											prevEl: ".swiper-button-prev",
+										},
+									});
+								}
+							</script>
+						</div>
+					</div>
+				</div>
+				<!-- 结束 -->
+
+				<!-- 另一个swiper -->
+				<div class="env" data-scroll-reveal="enter bottow and move 100px over 1.2s">
+					<div class="env_title">
+						<div>门</div>
+						<div>店</div>
+						<div>环</div>
+						<div>境</div>
+					</div>
+					<div class="swiper_2">
+						<div class="swiper mySwiper swiper2">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+
+									<img src="images/mdhj_1.jpg" alt="" class="swp_2">
+
+									<div class="swiper_2_1">
+										<p>会展店</p>
+										<p>蜀九香会展店属于蜀九香旗下Art系列的品牌店之一，shujiuxiang Art即蜀九香火锅旗下的高端</p>
+										<span>
+											了解详情
+											<img src="images/download1.png" alt="" class="swp_2_ig1">
+											<img src="images/download2.png" alt="" class="swp_2_ig2">
+										</span>
+									</div>
+								</div>
+								<div class="swiper-slide">
+
+									<img src="images/mdhj_2.jpg" alt="" class="swp_2">
+
+									<div class="swiper_2_1">
+										<p>会展店</p>
+										<p>蜀九香会展店属于蜀九香旗下Art系列的品牌店之一，shujiuxiang Art即蜀九香火锅旗下的高端</p>
+										<span>了解详情
+											<img src="images/download1.png" alt="" class="swp_2_ig1">
+											<img src="images/download2.png" alt="" class="swp_2_ig2">
+										</span>
+									</div>
+								</div>
+								<div class="swiper-slide">
+
+									<img src="images/mdhj_3.jpg" alt="" class="swp_2">
+
+									<div class="swiper_2_1">
+										<p>会展店</p>
+										<p>蜀九香会展店属于蜀九香旗下Art系列的品牌店之一，shujiuxiang Art即蜀九香火锅旗下的高端</p>
+										<span>了解详情
+											<img src="images/download1.png" alt="" class="swp_2_ig1">
+											<img src="images/download2.png" alt="" class="swp_2_ig2">
+										</span>
+									</div>
+								</div>
+								<div class="swiper-slide">
+
+									<img src="images/mdhj_4.jpg" alt="" class="swp_2">
+
+									<div class="swiper_2_1">
+										<p>会展店</p>
+										<p>蜀九香会展店属于蜀九香旗下Art系列的品牌店之一，shujiuxiang Art即蜀九香火锅旗下的高端</p>
+										<span>了解详情
+											<img src="images/download1.png" alt="" class="swp_2_ig1">
+											<img src="images/download2.png" alt="" class="swp_2_ig2">
+										</span>
+									</div>
+								</div>
+								<div class="swiper-slide">
+
+									<img src="images/mdhj_5.jpg" alt="" class="swp_2">
+
+									<div class="swiper_2_1">
+										<p>会展店</p>
+										<p>蜀九香会展店属于蜀九香旗下Art系列的品牌店之一，shujiuxiang Art即蜀九香火锅旗下的高端</p>
+										<span>了解详情
+											<img src="images/download1.png" alt="" class="swp_2_ig1">
+											<img src="images/download2.png" alt="" class="swp_2_ig2">
+										</span>
+									</div>
+								</div>
+							</div>
+							<div class="swp_2_an">
+								<div class="swiper-pagination"></div>
+							</div>
+
+						</div>
+						<div class="swp_hx">
+							<p></p>
+							<a href="#">更多</a>
+						</div>
+					</div>
+					<!-- Swiper JS -->
+					<script src="js/swiper_2.js"></script>
+
+					<!-- Initialize Swiper -->
+					<script>
+						var swiper = new Swiper(".swiper2", {
+							pagination: {
+								el: ".swiper-pagination",
+								clickable: true,
+								renderBullet: function(index, className) {
+									return '<span class="' + className + '">' + (index + 1) + "</span>";
+								},
+							},
+						});
+					</script>
+				</div>
+			</div>
+
+
+			<div class="key">
+				<div class="index_bjt">
+					<div class="index_bjt_box">
+						<div class="index_bjt_box1">
+							<div class="index_bjt_box11">
+								最新咨迅
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- <div class="index_sanTu">
+					<div class="index_sanTu_s">
+						<div class="idx_sanTu">
+							<a href="#">
+								<div class="idx_St_s">
+									<img src="images/zxzx_1.jpg" alt="">
+								</div>
+								<div class="idx_St">
+									<p>蜀九香新会展Art店———消费者最喜爱餐厅</p>
+									<div class="z_2022">
+										<span>2022,1月2</span>
+										<span>了解详情</span>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="idx_sanTu">
+							<a href="#">
+								<div class="idx_St_s">
+									<img src="images/zxzx_2.jpg" alt="">
+								</div>
+								<div class="idx_St">
+									<p>蜀九香新会展Art店———消费者最喜爱餐厅</p>
+									<div class="z_2022">
+										<span>2022,1月2</span>
+										<span>了解详情</span>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="idx_sanTu idx_sanTu_3">
+							<a href="#">
+								<div class="idx_St_s">
+									<img src="images/sp_1.gif" alt="">
+								</div>
+								<div class="idx_St">
+									<p>蜀九香新会展Art店———消费者最喜爱餐厅</p>
+									<div class="z_2022">
+										<span>2022,1月2</span>
+										<span>了解详情</span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="idx_x">
+						<div class="idx_xm">
+							<a href="#">
+								<span>
+									<span>更多</span>
+									<img src="images/download2.png" alt="">
+								</span>
+							</a>
+						</div>
+					</div>
+				</div> -->
+				<div class="casnt">
+					<div class="casnt_cont">
+						<div class="casnt_sanTu" style="cursor: pointer;">
+							<div class="casny_ig">
+								<img src="images/zxzx_1.jpg" alt="">
+							</div>
+							<div class="casnt_content">
+								<p>蜀九香新会展Art店——消费者最喜爱餐厅</p>
+								<div class="acctv">
+									<div>2022，1月2日</div>
+									<div>了解详情</div>
+								</div>
+							</div>
+						</div>
+						<div class="casnt_sanTu" style="cursor: pointer;">
+							<div class="casny_ig">
+								<img src="images/zxzx_1.jpg" alt="">
+							</div>
+							<div class="casnt_content">
+								<p>蜀九香新会展Art店——消费者最喜爱餐厅</p>
+								<div class="acctv">
+									<div>2022，1月2日</div>
+									<div>了解详情</div>
+								</div>
+							</div>
+						</div>
+						<div class="casnt_sanTu hidden" style="cursor: pointer;">
+							<div class="casny_ig">
+								<img src="images/zxzx_1.jpg" alt="">
+							</div>
+							<div class="casnt_content">
+								<p>蜀九香新会展Art店——消费者最喜爱餐厅</p>
+								<div class="acctv">
+									<div>2022，1月2日</div>
+									<div>了解详情</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 结束 -->
+
+			<script>
+				$(function() {
+					$('.swiper2 .swp_2_an .swiper-pagination-bullet').text('')
+				})
+			</script>
+			<!-- 倒数第二开始 -->
+			<div class="jin">
+				<div class="bx_x">
+					<div class="zengZe">
+						<div class="baoP" data-scroll-reveal="enter bottom and move 100px over .8s">
+							<p data-scroll-reveal="enter bottom and move 100px over .8s">蜀九香火锅诚邀加盟</p>
+							<span data-scroll-reveal="enter bottom and move 100px over .8s"><a
+									href="#">进一步了解></a></span>
+						</div>
+						<div class="yngHu">
+							<div class="TheUser" data-scroll-reveal="enter bottom and move 100px over 1.3s">
+								<input type="text" placeholder="输入您的姓名" class="input_1">
+							</div>
+							<div class="contant" data-scroll-reveal="enter bottom and move 100px over 1.3s">
+								<input type="text" placeholder="请输入您的电话号码" class="input_2">
+							</div>
+						</div>
+						<div class="submit">
+							<div class="submit_t" data-scroll-reveal="enter bottom and move 100px over 1.3s">
+								<span>提交</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 结束 -->
+			<div class="boxEnd">
+				<div class="End_zong">
+					<div class="End_sanFen">
+						<a href="#" class="end_a">
+							<img src="images/sjx_h.png" alt="" class="shujiuxiang">
+						</a>
+						<div class="boxEnd_z">
+							<p class="Ens_p1">加盟热线：400-833-5330</p>
+							<p class="Ens_p2">联系地址：成都市武侯区星狮路711号1栋2单元14楼</p>
+							<p class="Ens_p3">备案号:蜀ICP备19015043号-1网站设计：子鹿设计</p>
+						</div>
+						<ul>
+							<li>
+								<img src="images/wx_f1.png" alt="">
+							</li>
+							<li>
+								<img src="images/dy_f2.png" alt="">
+							</li>
+							<li>
+								<img src="images/wb_f3.png" alt="">
+							</li>
+							<li>
+								<img src="images/tm_f4.png" alt="">
+							</li>
+							<li>
+								<img src="images/jd_f5.png" alt="">
+							</li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+	</body>
+</html>
+<script>
+	window.scrollReveal = new scrollReveal({
+		//配置选项
+		reset: true,
+	});
+</script>
+<script>
+	$(function() {
+		$(document).ready(function() {
+			var wid = $(window).width()
+			console.log(wid);
+			if (wid < 770) {
+				var swiper = new Swiper(".swiper1", {
+					slidesPerView: 2,
+					spaceBetween: 30,
+					slidesPerGroup: 2,
+					loop: true,
+					loopFillGroupWithBlank: true,
+					pagination: {
+						el: ".swiper-pagination",
+						clickable: true,
+					},
+					navigation: {
+						nextEl: ".swiper-button-next",
+						prevEl: ".swiper-button-prev",
+					},
+				});
+
+				var indexWidth = $(window).width()
+				console.log(indexWidth);
+				if (indexWidth < 480) {
+					var swiper = new Swiper(".swiper1", {
+						slidesPerView: 1,
+						spaceBetween: 30,
+						slidesPerGroup: 1,
+						loop: true,
+						loopFillGroupWithBlank: true,
+						pagination: {
+							el: ".swiper-pagination",
+							clickable: true,
+						},
+						navigation: {
+							nextEl: ".swiper-button-next",
+							prevEl: ".swiper-button-prev",
+						},
+					});
+				} else {
+					var swiper = new Swiper(".swiper1", {
+						slidesPerView: 1,
+						spaceBetween: 30,
+						slidesPerGroup: 1,
+						loop: true,
+						loopFillGroupWithBlank: true,
+						pagination: {
+							el: ".swiper-pagination",
+							clickable: true,
+						},
+						navigation: {
+							nextEl: ".swiper-button-next",
+							prevEl: ".swiper-button-prev",
+						},
+					});
+				}
+			}
+		});
+	})
+</script>
