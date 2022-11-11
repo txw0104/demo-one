@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>蜀九香火锅官网</title>
+		<link rel="icon" href="../images/w_z.png">
+		<link rel="stylesheet" href="css/index.css">
+		<script src="../js/jQuery.js"></script>
+		<!-- <link rel="stylesheet" href="../css/index.css"> -->
+		<link rel="stylesheet" href="../public/public.css">
+		<script src="../public/public.js"></script>
+		<script>
+			// $(function() {
+			// 	var num = 0;
+			// 	$(".linn").click(function() {
+			// 		num++;
+			// 		if(num%2==1){
+			// 				$('.a_1').show()
+			// 		}else{
+			// 			window.location.reload();
+			// 		}
+			// 	})
+			// 	var numb = 0;
+			// 	$(".linm").click(function() {
+			// 		numb++;
+			// 		if(numb%2==1){
+			// 				$('.a_2').show()
+			// 		}else{
+			// 			window.location.reload();
+			// 		}
+			// 	})
+			// })
+		</script>
+	</head>
+	<body>
+		<div class="box">
+			<div class="header">
+				<a href="index.html">
+					<img src="../images/sjx_b.png" alt="" class="ig_b block">
+					<img src="../images/sjx_h.png" alt="" class="ig_h none">
+				</a>
+				<div class="MenuBtn">
+					<span class="line1"></span>
+					<span class="line2"></span>
+					<span class="line3"></span>
+				</div>
+				<div class="borde">
+					<ul class="navigation">
+						<li><a href="#">首页</a></li>
+						<li><a href="#" class="navigation_1 linn" style="color: #fde9bc;">品牌中心</a>
+							<div class="aaa a_1">
+								<p><a href="#" style="font-size: 14px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;加盟优势</a></p>
+								<p><a href="#" style="font-size: 14px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;加盟支持</a></p>
+								<p><a href="#" style="font-size: 14px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;联系方式</a></p>
+								<p><a href="#" style="font-size: 14px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;留言表单</a></p>
+							</div>
+						</li>
+						<li><a href="#" class="linm">新闻质询</a>
+							<div class="aaa a_2">
+								<p><a href="#" style="font-size: 14px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;近期活动</a></p>
+								<p><a href="#" style="font-size: 14px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;近期公告</a></p>
+								<p><a href="#" style="font-size: 14px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;视频中心</a></p>
+							</div>
+						</li>
+						<li><a href="AboutUs/index.html">关于我们</a></li>
+						<li><a href="Join in cooperation加盟合作/index.html">加盟合作</a></li>
+					</ul>
+					<div class="contact">
+						<div class="wx">
+							<img src="../images/wx.gif" alt="" id="btn">
+						</div>
+						<div class="dh">
+							<img src="../images/dh.gif" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="upp">
+				<img src="images/s.png" alt="">
+			</div>
+			<div class="had_bor">
+				<div class="had_bor_cont">
+					<span></span>
+					<div>
+						<a href="#p1" class="bue bor_a1">
+							加盟优势
+						</a>
+					</div>
+					<div>
+						<a href="#p2" class="hui bor_a2">
+							加盟支持
+						</a>
+
+					</div>
+					<div>
+						<a href="#p3" class="hui  bor_a3">
+							联系方式
+						</a>
+					</div>
+					<div>
+						<a href="#p4" class="hui  bor_a4">
+							留言表单
+						</a>
+					</div>
+					<img src="images/download.png" alt="">
+				</div>
+			</div>
+			<script>
+				$(function() {
+					$('.bor_a1').click(function() {
+						$(this).addClass('bue').removeClass('hui')
+						$('.bor_a2').addClass('hui').removeClass('bue')
+						$('.bor_a3').addClass('hui').removeClass('bue')
+						$('.bor_a4').addClass('hui').removeClass('bue')
+						$('.had_bor_cont span').css('top', '0px')
+					})
+					$('.bor_a2').click(function() {
+						$(this).addClass('bue').removeClass('hui')
+						$('.bor_a1').addClass('hui').removeClass('bue')
+						$('.bor_a3').addClass('hui').removeClass('bue')
+						$('.bor_a4').addClass('hui').removeClass('bue')
+						$('.had_bor_cont span').css('top', '60px')
+					})
+					$('.bor_a3').click(function() {
+						$(this).addClass('bue').removeClass('hui')
+						$('.bor_a2').addClass('hui').removeClass('bue')
+						$('.bor_a1').addClass('hui').removeClass('bue')
+						$('.bor_a4').addClass('hui').removeClass('bue')
+						$('.had_bor_cont span').css('top', '120px')
+					})
+					$('.bor_a4').click(function() {
+						$(this).addClass('bue').removeClass('hui')
+						$('.bor_a2').addClass('hui').removeClass('bue')
+						$('.bor_a3').addClass('hui').removeClass('bue')
+						$('.bor_a1').addClass('hui').removeClass('bue')
+						$('.had_bor_cont span').css('top', '180px')
+					})
+					var $goTop = $(".goTop");
+					$(window).scroll(function() {
+						var highe = $(window).scrollTop();
+						console.log(highe);
+						if (highe > 600) {
+							$('.had_bor').css({
+								top: '50%',
+								opacity: '1',
+								transition: 'all 1s'
+							})
+						} else if (highe < 600) {
+							$('.had_bor').css({
+								top: '30%',
+								opacity: '0',
+
+							})
+						}
+						// 三元表达式进行高度判断
+						// highe >= 200 ? $goTop.fadeIn() : $goTop.fadeOut
+
+					})
+					// 给html做动画，修改html的scrollTop
+					// 写上html，body 是为了更好的兼容更多的浏览器 
+					$(".upp").click(function() {
+						$('html').animate({
+							scrollTop: 0
+						})
+					});
+				})
+			</script>
+			<div class="border">
+				<div class="brd_ig">
+					<img src="images/1.jpg" alt="" class="brd_ig1">
+				</div>
+				<div class="nav">
+					<div class="nav_z">
+						<p>FRANCHISE COOPERATION</p>
+
+					</div>
+					<div class="nav_y">
+						<div class="nav_y_z">
+							<p>加盟合作</p>
+						</div>
+						<div class="nav_y_y">
+							<div>
+								<a href="new.html" class="yanSe tscx">加盟优势</a>
+							</div>
+							<div><a href="NewsCenter.html" class="zxc">加盟支持</a></div>
+							<div><a href="VideoCenter.html" class="xcz">联系方式</a></div>
+							<div><a href="VideoCenter.html" class="xcz">留言表单</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 头部结束 -->
+			<div class="box_1">
+				<div class="box1_title">SHUJIUXIANG</div>
+				<div class="box1_cont">
+					<div class="box1_content">
+						<div class="txts">
+							<p>Company profile</p>
+							<p>公司简介</p>
+						</div>
+						<div class="desc">
+							<p>四川蜀九香企业管理有限公司是成都知名餐饮企业之一，主要经营火锅餐饮,
+								还成立有四川九億电子商务有限公司、成都牛草装饰设计公司、新蜀九香食品有限公司，全面开拓，多元化发展。</p>
+							<p>&nbsp;</p>
+							<p>2000年6月，位于成都少陵路的蜀九香家家福店开业，发展至今，蜀九香在成都有10家直营店，全国共100多家门店。</p>
+						</div>
+						<div class="intro">
+							<div class="intro_one">
+								<p>since</p>
+								<p>2000</p>
+							</div>
+							<div class="intro_one intro_two">
+								<p>全国门店</p>
+								<p>100</p>
+							</div>
+						</div>
+					</div>
+					<div class="box1_content2">
+						<div class="box1_content2_ig">
+							<img src="images/2.jpg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="box_2">
+				<div class="fixbg"></div>
+			</div>
+			<div class="history">
+				<div class="txts">
+					<p>Company development</p>
+					<p>公司发展</p>
+				</div>
+				<div class="pic">
+					<div class="pic_cont">
+						<img src="images/2.bmp" alt="">
+					</div>
+					<div class="data_v">
+						<div class="data_v_cont">
+							<div class="data_v_one">
+								<div class="data_p lue">2021 - 2018</div>
+								<div class="data_l">2017 - 2014</div>
+								<div class="data_m">2013 - 2010</div>
+								<div class="data_o">2009 - 2000</div>
+							</div>
+							<script>
+								$(function() {
+									$('.data_v_one div').click(function() {
+										$(this).addClass('lue').siblings().removeClass('lue')
+									})
+									$('.data_p').click(function() {
+										$('.tab1').show()
+										$('.tab2').hide()
+										$('.tab3').hide()
+										$('.tab4').hide()
+									})
+									$('.data_l').click(function() {
+										$('.tab1').hide()
+										$('.tab2').show()
+										$('.tab3').hide()
+										$('.tab4').hide()
+									})
+									$('.data_m').click(function() {
+										$('.tab1').hide()
+										$('.tab2').hide()
+										$('.tab3').show()
+										$('.tab4').hide()
+									})
+									$('.data_o').click(function() {
+										$('.tab1').hide()
+										$('.tab2').hide()
+										$('.tab3').hide()
+										$('.tab4').show()
+									})
+								})
+							</script>
+							<div class="data_v_two">
+								<div class="tab tab1">
+									<p>2021</p>
+									<p>获得“2020年度成都美食地标品牌”、“川味麻辣火锅品牌TOP10”等荣誉</p>
+								</div>
+								<div class="tab tab1">
+									<p>2020</p>
+									<p>获得“2020年度成都美食地标品牌”、“川味麻辣火锅品牌TOP10”等荣誉</p>
+								</div>
+								<div class="tab tab1">
+									<p>2019</p>
+									<p>获得“2020年度成都美食地标品牌”、“川味麻辣火锅品牌TOP10”等荣誉</p>
+								</div>
+								<div class="tab tab1">
+									<p>2018</p>
+									<p>获得“2020年度成都美食地标品牌”、“川味麻辣火锅品牌TOP10”等荣誉</p>
+								</div>
+								<div class="tab tab2 none">
+									<p>2017</p>
+									<p>获得“2020年度成都美食地标品牌”、“川味麻辣火锅品牌TOP10”等荣誉</p>
+								</div>
+								<div class="tab tab2 none">
+									<p>2016</p>
+									<p>获得“2020年度成都美食地标品牌”、“川味麻辣火锅品牌TOP10”等荣誉</p>
+								</div>
+								<div class="tab tab2 none">
+									<p>2015</p>
+									<p>获得“2020年度成都美食地标品牌”、“川味麻辣火锅品牌TOP10”等荣誉</p>
+								</div>
+								<div class="tab tab2 none">
+									<p>2014</p>
+									<p>获得“2020年度成都美食地标品牌”、“川味麻辣火锅品牌TOP10”等荣誉</p>
+								</div>
+								<div class="tab tab3 none">
+									<p>2013</p>
+									<p>获得“2020年度成都美食地标品牌”、“川味麻辣火锅品牌TOP10”等荣誉</p>
+								</div>
+								<div class="tab tab3 none">
+									<p>2012</p>
+									<p>获得“2020年度成都美食地标品牌”、“川味麻辣火锅品牌TOP10”等荣誉</p>
+								</div>
+								<div class="tab tab3 none">
+									<p>2011</p>
+									<p>获得“2020年度成都美食地标品牌”、“川味麻辣火锅品牌TOP10”等荣誉</p>
+								</div>
+								<div class="tab tab3 none">
+									<p>2010</p>
+									<p>获得“2020年度成都美食地标品牌”、“川味麻辣火锅品牌TOP10”等荣誉</p>
+								</div>
+								<div class="tab tab4 none">
+									<p>2009</p>
+									<p>获得“2020年度成都美食地标品牌”、“川味麻辣火锅品牌TOP10”等荣誉</p>
+								</div>
+								<div class="tab tab4 none">
+									<p>2008</p>
+									<p>获得“2020年度成都美食地标品牌”、“川味麻辣火锅品牌TOP10”等荣誉</p>
+								</div>
+								<div class="tab tab4 none">
+									<p>2007</p>
+									<p>获得“2020年度成都美食地标品牌”、“川味麻辣火锅品牌TOP10”等荣誉</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--  -->
+			<div class="honor">
+				<div class="honor_ig">
+					<img src="images/4.bmp" alt="">
+				</div>
+				<div class="honor_txts">
+					<div class="honor_title">
+						<p>Enterprise honor</p>
+						<p>企业荣誉</p>
+					</div>
+					<div class="honor_cont">
+						<div class="honor_content">
+							<div class="honor_content_p">
+								<p>“川味麻辣火锅品牌TOP10”</p>
+								<div class="honor_content_ig">
+									<img src="images/6.jpg" alt="">
+								</div>
+							</div>
+							<div class="honor_content_p">
+								<p>“川味麻辣火锅品牌TOP10”</p>
+								<div class="honor_content_ig">
+									<img src="images/6.jpg" alt="">
+								</div>
+							</div>
+							<div class="honor_content_p">
+								<p>“川味麻辣火锅品牌TOP10”</p>
+								<div class="honor_content_ig">
+									<img src="images/6.jpg" alt="">
+								</div>
+							</div>
+							<div class="honor_content_p">
+								<p>“川味麻辣火锅品牌TOP10”</p>
+								<div class="honor_content_ig">
+									<img src="images/6.jpg" alt="">
+								</div>
+							</div>
+							<div class="honor_content_p">
+								<p>“川味麻辣火锅品牌TOP10”</p>
+								<div class="honor_content_ig">
+									<img src="images/6.jpg" alt="">
+								</div>
+							</div>
+							<div class="honor_content_p">
+								<p>“川味麻辣火锅品牌TOP10”</p>
+								<div class="honor_content_ig">
+									<img src="images/6.jpg" alt="">
+								</div>
+							</div>
+							<div class="honor_content_p">
+								<p>“川味麻辣火锅品牌TOP10”</p>
+								<div class="honor_content_ig">
+									<img src="images/6.jpg" alt="">
+								</div>
+							</div>
+							<div class="honor_content_p">
+								<p>“川味麻辣火锅品牌TOP10”</p>
+								<div class="honor_content_ig">
+									<img src="images/6.jpg" alt="">
+								</div>
+							</div>
+							<div class="honor_content_p">
+								<p>“川味麻辣火锅品牌TOP10”</p>
+								<div class="honor_content_ig">
+									<img src="images/6.jpg" alt="">
+								</div>
+							</div>
+							<div class="honor_content_p">
+								<p>“川味麻辣火锅品牌TOP10”</p>
+								<div class="honor_content_ig">
+									<img src="images/6.jpg" alt="">
+								</div>
+							</div>
+							<div class="honor_content_p">
+								<p>“川味麻辣火锅品牌TOP10”</p>
+								<div class="honor_content_ig">
+									<img src="images/6.jpg" alt="">
+								</div>
+							</div>
+							<div class="honor_content_p">
+								<p>“川味麻辣火锅品牌TOP10”</p>
+								<div class="honor_content_ig">
+									<img src="images/6.jpg" alt="">
+								</div>
+							</div>
+							<div class="honor_content_p">
+								<p>“川味麻辣火锅品牌TOP10”</p>
+								<div class="honor_content_ig">
+									<img src="images/6.jpg" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--  -->
+			<div class="brsnd">
+				<div class="brsnd_title">
+					<p>Its brands</p>
+					<p>旗下品牌</p>
+				</div>
+				<div class="brsnd_cont">
+					<div class="brsnd_cont_ig">
+						<img src="images/7.jpg" alt="">
+					</div>
+					<div class="brsnd_txts">
+						<p>成都新蜀九香食品有限公司</p>
+						<p>成都新蜀九香食品有限公司隶属于四川蜀九香企业管理有限公司，是专业从事调味料、火锅底料及附属产品食用植物油的生产、研发、销售的规模性民事企业。公司坐落于成都粮油精深加工•食品加工开发区，总投资5000万元，占地面积50亩。
+						</p>
+						<p>公司已通过"SO9001〞、MHACCP”、“1SO22000”体系认证。多项生产工艺获得国家知识产权局专利。公司一直秉承“诚实守信、客户第一、服务至上”的经营理念
+							，坚守"用良心做产品，用道德树品牌”的质量方针，公司主营各类底料、调味料、食用植物油，是一家集产品研发、专业代加工、OEM贴牌等为一体的大型调味品生产加工企业。</p>
+					</div>
+				</div>
+
+				<div class="brsnd_cont">
+
+					<div class="brsnd_txts aaa1">
+						<p>成都牛草装饰设计有限公司</p>
+						<p>公司成立初期一直以“专注品牌策划与设计”为核心，是一家致力于餐饮品牌形象策划，提供企业形象品牌识别的建立、维护、推广工作，为客户提供空间设计、品牌平面、软装设计、家具设计等一站式餐饮品牌服务性公司。已为34家品牌提供专注的品牌服务，涉及22个城市115家门店。包括蜀九香火锅品牌、锦官城火锅品牌、老阿婆公馆火锅、巴蜀崽火锅、宽坐火锅、川派世家、众和道日本料理、大成小渝火锅、耗牛仔火锅、十七城面馆、一碗山城面馆、自在天府、王家大院火锅、一渔一季、湘西部落等34家知名餐饮企业。
+						</p>
+
+					</div>
+					<div class="brsnd_cont_image">
+						<img src="images/8.jpg" alt="">
+					</div>
+				</div>
+
+				<div class="brsnd_cont">
+					<div class="brsnd_cont_ig">
+						<img src="images/9.jpg" alt="">
+					</div>
+					<div class="brsnd_txts">
+						<p>四川九億电子商务有限公司</p>
+						<p>成立于2012年，是四川蜀九香火锅企业全资子公司，公司主要为传统餐饮企业寻找更多发展的可能性，研究和发展火锅底料在多方位应用上的发展。公司有线上线下销售团队、负责网页、平面及包装设计团队、售前售后处理团队、站外推广、自媒体宣传及直播团队、产品打包及发货团队。公司跟随市场更新，除了最能代表成都的牛油、清油火锅底料外，公司还开发了由姬松茸、野生菌为主的菌汤养生锅底、大骨熬制搭配酸菜的酸菜豚骨锅底、番茄口味锅底、冬阴功口味锅底等其他口味锅底。公司现承接开店供料、代工生产、定制贴牌等相关业务。
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="boxEnd">
+				<div class="End_zong">
+					<div class="End_sanFen">
+						<a href="#">
+							<img src="images/sjx_h.png" alt="" class="shujiuxiang">
+						</a>
+						<div class="boxEnd_z">
+							<p class="Ens_p1">加盟热线：400-833-5330</p>
+							<p class="Ens_p2">联系地址：成都市武侯区星狮路711号1栋2单元14楼</p>
+							<p class="Ens_p3">备案号:蜀ICP备19015043号-1网站设计：子鹿设计</p>
+						</div>
+						<ul>
+							<li>
+								<img src="images/wx_f1.png" alt="">
+							</li>
+							<li>
+								<img src="images/dy_f2.png" alt="">
+							</li>
+							<li>
+								<img src="images/wb_f3.png" alt="">
+							</li>
+							<li>
+								<img src="images/tm_f4.png" alt="">
+							</li>
+							<li>
+								<img src="images/jd_f5.png" alt="">
+							</li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
